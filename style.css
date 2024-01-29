@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 50px; /* Adjust as needed */
+}
+
+.business-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px; /* Adjust as needed */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+}
+
+.menu {
+    display: none;
+}
+
+/* Add your additional styles here */
+
+
+
+footer {
+    background-color: #f2f2f2; /* Light grey background, change as needed */
+    color: #333333; /* Dark text color, change as needed */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 960px;
+    margin: auto;
+}
+
+footer a {
+    color: #0066cc; /* Color for email link, change as needed */
+}
+
+footer p {
+    margin: 10px 0;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+ 
+  /* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    position: relative;
+}
+
+/* Display the first slide */
+.mySlides:first-child {
+    display: block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/* Add your additional styles here */
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contact-text {
+    color: #333; /* Adjust text color as needed */
+    font-size: 1.2em; /* Adjust font size as needed */
+    flex-grow: 1;
+}
+
+.Contact us-button {
+    background-color: green;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+    .signup-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .signup-button {
+        margin-top: 10px;
+    }
+}
+.back-arrow {
+    display: block;
+    margin: 10px;
+    /* Add your desired styling here */
+    /* Example: */
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+/* If you're using an image for the arrow */
+.back-arrow img {
+    width: 20px;
+    height: 20px;
+}
+/* Contact Form Styles */
+
+.contact-us-button {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    font-size: 16px; /* Font size, adjust as needed */
+    padding: 12px 24px; /* Padding for top/bottom and left/right */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* No underline on text */
+    display: inline-block; /* Aligns button properly with text */
+    margin: 4px 2px; /* Margin for spacing around the button */
+    transition-duration: 0.4s; /* Smooth transition for hover effect */
+}
+
+.contact-us-button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Ensure button is responsive on smaller screens */
+@media screen and (max-width: 600px) {
+    .contact-us-button {
+        width: 100%; /* Full width on small screens */
+        padding: 12px 0; /* Adjust padding */
+    }
+}

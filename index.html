@@ -1,24 +1,108 @@
-index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Your Website</title>
+    <title>Green Digital World</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header-content img.logo {
+            height: 50px;
+        }
+
+        .header-content .business-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .back-arrow {
+            display: block;
+            margin: 10px;
+            color: #000;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        /* Form Styling */
+        #contactForm {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f3f3f3;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #contactForm label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #contactForm input[type="text"],
+        #contactForm input[type="email"],
+        #contactForm textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #contactForm input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #contactForm input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Your Website</h1>
+        <div class="header-content">
+            <!-- Update the src attribute to the correct path of your logo -->
+            <img src="logo.PNG" alt="Green Digital World Logo" class="logo">
+            <div class="business-name">Green Digital World</div>
+        </div>
     </header>
 
-    <section class="main-content">
-        <p>This is the homepage of your website. Feel free to add your content here.</p>
-        <img src="your-image.jpg" alt="Description of your image">
-    </section>
+    
+    <a href="home.html" class="back-arrow">Back to Home</a>
 
-    <footer>
-        <p>&copy; 2023 Your Website. All rights reserved.</p>
-    </footer>
+
+    <form id="contactForm" action="/submit_contact" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
 </body>
 </html>
